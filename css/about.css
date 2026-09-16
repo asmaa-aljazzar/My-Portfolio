@@ -1,0 +1,6 @@
+#about .describtion {
+    font-size: 20px;
+    text-align: justify;
+    padding: var(--container-padding);
+    background-color: rgba(196, 196, 196, 0.149);
+}

@@ -1,21 +1,12 @@
 @import url("./variables.css");
 
-#home .container {
-    display: grid;
-    grid-template-columns: 1fr 450px;
-    justify-content: center;
-    gap: 20px;
-    color: white;
-    margin-top: var(--section-margin);
-}
-
-#home .container .image {
+#home .main-container .image {
     padding: var(--container-padding);
     box-shadow: var(--box-shadow);
     border-radius: var(--image-radius);
 }
 
-#home .container img {
+#home .main-container img {
     width: 100%;
 }
 
@@ -29,7 +20,9 @@
 
 #home h2 {
     margin-bottom: 20px;
+    color: var(--ternary-color);
 }
+
 #home .intro {
     padding: var(--container-padding);
 }

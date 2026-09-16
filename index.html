@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- My CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -25,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a202e;">
             <div class="container">
 
-                <a class="navbar-brand" href="#home" style="color: #c4b4ff;">
+                <a class="navbar-brand" href="#home">
                     Asmaa Aljazzar
                 </a>
 
@@ -73,11 +75,13 @@
         <!-- Todo: need media -->
         <!-- Start Hero -->
         <section id="home">
-            <div class="container">
+            <div class="main-container">
                 <div class="intro"> <!--todo animation on text typing-->
                     <h1>Hi! I’m<span> Asmaa Aljazzar </span></h1>
                     <h2>Junior Full Stack Web Developer</h2>
-                    <p>Computer Science graduate and junior web developer based in Amman, Jordan, with experience in front-end and back-end development. I build responsive web applications and continuously develop my skills through practical projects and technical training.</p>
+                    <p>Computer Science graduate and junior web developer based in Amman, Jordan, with experience in
+                        front-end and back-end development. I build responsive web applications and continuously develop
+                        my skills through practical projects and technical training.</p>
                 </div>
                 <div class="image"> <!--todo animation on image-->
                     <img src="./images/landing-image.png" alt="Landing Image">
@@ -89,18 +93,58 @@
 
         <!-- Start Technologies -->
         <section id="technologies">
+            <div class="outer-container">
+                <div class="main-container">
+                    <div class="images">
+                        <img src="./images/technologies/html.png" alt="html-icon">
+                        <img src="./images/technologies/css.png" alt="css-icon">
+                        <img src="./images/technologies/bootstrap.png" alt="bootstrap-icon">
+                        <img src="./images/technologies/js.png" alt="js-icon">
+                        <img src="./images/technologies/react.png" alt="react-icon">
+                        <img src="./images/technologies/nodejs.png" alt="node-icon">
+                        <img src="./images/technologies/sql.png" alt="sql-icon">
+                        <img src="./images/technologies/php.png" alt="php-icon">
+                        <img src="./images/technologies/python.png" alt="php-icon">
+                        <img src="./images/technologies/c.png" alt="php-icon">
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- End Technologies -->
 
 
         <!-- Start About Me -->
         <section id="about">
+            <div class="main-container">
+                <div class="section-title"> <!--todo animation on text typing-->
+                    About Me
+                </div>
+                <div class="describtion"> <!--todo animation on image-->
+                    I am a Computer Science graduate and junior web developer based in Amman, Jordan. I completed
+                    peer-to-peer programming training at 42 Amman and I am currently continuing my professional
+                    development through Orange Academy.
+                </div>
+            </div>
         </section>
         <!-- End About Me -->
 
 
         <!-- Start My Projects -->
         <section id="projects">
+            <div class="main-container">
+                <div class="section-title">
+                    My Projects
+                </div>
+                <div class="projects-body">
+                    <div class="projects-cards">
+                        <div class="p-card">
+
+                        </div>
+                        
+                    </div>
+                    <button>More projects on GitHub</button>
+                </div>
+            </div>
         </section>
         <!-- End My Projects -->
 
@@ -112,9 +156,17 @@
 
     </main>
 
-
     <!-- Start Footer -->
     <footer>
+        <div class="container-fluid p-4 d-flex flex-column justify-content-center align-items-center">
+            <p>Asmaa Aljazzar</p>
+            <div class="socials text-decoration-none">
+                <div> <a href="https://github.com/asmaa-aljazzar"><i class="bi bi-github"></i></a></div>
+                <div> <a href="https://www.linkedin.com/in/asmaaljazzar/"> <i class="bi bi-linkedin"></i></a></div>
+                <div> <a href="mailto:aljazzarasmaa3@gmail.com"><i class="bi bi-envelope"></i></a></div>
+            </div>
+            <p class="mt-2">&copy;© 2020–2026 Asmaa. All rights reserved.</p>
+        </div>
     </footer>
     <!-- End Footer -->
 

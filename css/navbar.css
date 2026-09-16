@@ -2,12 +2,15 @@ nav {
     box-shadow: 0 1px 20px #c4b4ff;
 }
 
-nav .container {
+
+nav .nav-container {
     height: 100%;
+    margin: var(--section-margin);
+
 }
 
-nav .container>a:first-child {
-    color: #c4b4ff !important;
+nav a:first-of-type {
+    color: var(--primary-color) !important;
 }
 
 nav a {

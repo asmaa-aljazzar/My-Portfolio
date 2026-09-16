@@ -1,0 +1,30 @@
+@import url("./variables.css");
+
+.socials {
+    width: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    box-shadow: 1px 0 20px #c4b4ff;
+}
+
+footer div:first-child {
+    background-color: #1a202e;
+}
+
+footer a {
+    color: var(--ternary-color) !important;
+}
+
+footer p:first-child {
+    color: var(--primary-color);
+}
+
+footer p:last-child {
+    color: white;
+    font-size: 12px;
+}
