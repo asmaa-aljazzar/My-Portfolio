@@ -4,9 +4,10 @@ A responsive personal portfolio website that presents my background, technologie
 
 [View the live portfolio](https://asmaa-aljazzar.github.io/My-Portfolio/)
 
-## Wireframe from <a href="https://www.figma.com/design/3dtWkbpgDEu7eUkI6fEW79/Asmaa-Potfolio?node-id=16-396&t=xviHBOKH8Akhc2kC-1"> Here</a>
+## Wireframe from 
+<a href="https://www.figma.com/design/3dtWkbpgDEu7eUkI6fEW79 Asmaa-Potfolio?node-id=16-396&t=xviHBOKH8Akhc2kC-1"> Here</a>
 
-## Mockup from <a href="https://www.figma.com/design/DiEzGHzIm46OJzMS2ig0kt/Asmaa-Aljazzar-Portfolio---Main-Mockup?node-id=0-1&t=oOayLhKJcj1wqTKX-1> Here </a>
+## Mockup from <a href="https://www.figma.com/design/DiEzGHzIm46OJzMS2ig0kt/Asmaa-Aljazzar-Portfolio---Main-Mockup?node-id=0-1&t=oOayLhKJcj1wqTKX-1"> Here </a>
 
 ## Features
 
