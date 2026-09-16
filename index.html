@@ -4,30 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The portfolio of Asmaa Aljazzar, a junior full-stack web developer based in Amman, Jordan.">
+    <meta name="theme-color" content="#1a202e">
 
-    <title>Asmaa Aljazzar</title>
+    <title>Asmaa Aljazzar | Junior Full-Stack Web Developer</title>
 
-    <!-- Bootstrap 5.3.8 -->
+    <!-- Bootstrap 5.3.8 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
 
-    <!-- Bootstrap icons -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- playsinline: on mobile the video plays in the same webpage instead forcing it into full-screen -->
-    <video src="./videos/Space.mp4" muted autoplay loop playsinline></video>
+    <!-- Decorative background video: it has no speech or information. -->
+    <video class="background-video" src="./videos/Space.mp4" muted autoplay loop playsinline preload="metadata"
+        aria-hidden="true" tabindex="-1"></video>
+
     <header>
-
         <!-- Start Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a202e;">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a202e;"
+            aria-label="Main navigation">
             <div class="container">
-
-                <a class="navbar-brand" href="#home">
+                <a class="navbar-brand" href="#home" aria-label="Asmaa Aljazzar, go to home section">
                     Asmaa Aljazzar
                 </a>
 
@@ -39,139 +46,266 @@
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-
-                        <a class="nav-link" aria-current="page" href="#home" style="color: #47c0d3;">
-                            Home
-                        </a>
-
-                        <a class="nav-link" href="#technologies">
-                            Technologies
-                        </a>
-
-                        <a class="nav-link" href="#about">
-                            About me
-                        </a>
-
-                        <a class="nav-link" href="#projects">
-                            Projects
-                        </a>
-
-                        <a class="nav-link" href="#contact">
-                            Contact
-                        </a>
-
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#technologies">Technologies</a>
+                        <a class="nav-link" href="#about">About me</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
-
             </div>
         </nav>
         <!-- End Navbar -->
-
     </header>
 
-    <main>
-
-        <!-- Todo: need animation in hero section -->
-        <!-- Todo: need media -->
+    <main id="main-content">
         <!-- Start Hero -->
-        <section id="home">
+        <section id="home" aria-labelledby="home-title">
             <div class="main-container">
-                <div class="intro"> <!--todo animation on text typing-->
-                    <h1>Hi! I’m<span> Asmaa Aljazzar </span></h1>
-                    <h2>Junior Full Stack Web Developer</h2>
-                    <p>Computer Science graduate and junior web developer based in Amman, Jordan, with experience in
-                        front-end and back-end development. I build responsive web applications and continuously develop
-                        my skills through practical projects and technical training.</p>
+                <div class="intro">
+                    <p class="eyebrow">Hello, I am</p>
+                    <h1 id="home-title">Asmaa <span>Aljazzar</span></h1>
+                    <h2>Junior Full-Stack Web Developer</h2>
+                    <p>
+                        Computer Science graduate and junior web developer based in Amman, Jordan. I build responsive,
+                        practical web applications and continue developing my skills through technical training and
+                        hands-on projects.
+                    </p>
+                    <div class="hero-actions" aria-label="Portfolio actions">
+                        <a class="button button--primary" href="#projects">View my projects</a>
+                        <a class="button button--secondary" href="#contact">Contact me</a>
+                    </div>
                 </div>
-                <div class="image"> <!--todo animation on image-->
-                    <img src="./images/landing-image.png" alt="Landing Image">
+
+                <div class="image">
+                    <img src="./images/landing-image.png"
+                        alt="Illustration representing Asmaa Aljazzar as a web developer">
                 </div>
             </div>
         </section>
         <!-- End Hero -->
 
-
         <!-- Start Technologies -->
-        <section id="technologies">
+        <section id="technologies" aria-labelledby="technologies-title">
+            <h2 id="technologies-title" class="visually-hidden">Technologies I use</h2>
             <div class="outer-container">
                 <div class="main-container">
-                    <div class="images">
-                        <img src="./images/technologies/html.png" alt="html-icon">
-                        <img src="./images/technologies/css.png" alt="css-icon">
-                        <img src="./images/technologies/bootstrap.png" alt="bootstrap-icon">
-                        <img src="./images/technologies/js.png" alt="js-icon">
-                        <img src="./images/technologies/react.png" alt="react-icon">
-                        <img src="./images/technologies/nodejs.png" alt="node-icon">
-                        <img src="./images/technologies/sql.png" alt="sql-icon">
-                        <img src="./images/technologies/php.png" alt="php-icon">
-                        <img src="./images/technologies/python.png" alt="php-icon">
-                        <img src="./images/technologies/c.png" alt="php-icon">
-                    </div>
+                    <ul class="technology-list" role="list">
+                        <li><img src="./images/technologies/html.png" alt="HTML"></li>
+                        <li><img src="./images/technologies/css.png" alt="CSS"></li>
+                        <li><img src="./images/technologies/bootstrap.png" alt="Bootstrap"></li>
+                        <li><img src="./images/technologies/js.png" alt="JavaScript"></li>
+                        <li><img src="./images/technologies/react.png" alt="React"></li>
+                        <li><img src="./images/technologies/nodejs.png" alt="Node.js"></li>
+                        <li><img src="./images/technologies/sql.png" alt="SQL"></li>
+                        <li><img src="./images/technologies/php.png" alt="PHP"></li>
+                        <li><img src="./images/technologies/python.png" alt="Python"></li>
+                        <li><img src="./images/technologies/c.png" alt="C programming language"></li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!-- End Technologies -->
 
-
         <!-- Start About Me -->
-        <section id="about">
+        <section id="about" aria-labelledby="about-title">
             <div class="main-container">
-                <div class="section-title"> <!--todo animation on text typing-->
-                    About Me
-                </div>
-                <div class="describtion"> <!--todo animation on image-->
-                    I am a Computer Science graduate and junior web developer based in Amman, Jordan. I completed
-                    peer-to-peer programming training at 42 Amman and I am currently continuing my professional
-                    development through Orange Academy.
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <div class="description">
+                    <p>
+                        I am a Computer Science graduate and junior web developer based in Amman, Jordan. I completed
+                        peer-to-peer programming training at 42 Amman and I am currently continuing my professional
+                        development through Orange Academy.
+                    </p>
+                    <p>
+                        My goal is to build complete, accessible projects, work effectively within a team, and deliver
+                        practical solutions with clear, maintainable code.
+                    </p>
                 </div>
             </div>
         </section>
         <!-- End About Me -->
 
-
         <!-- Start My Projects -->
-        <section id="projects">
+        <section id="projects" aria-labelledby="projects-title">
             <div class="main-container">
-                <div class="section-title">
-                    My Projects
-                </div>
+                <h2 id="projects-title" class="section-title">My Projects</h2>
+
                 <div class="projects-body">
                     <div class="projects-cards">
-                        <div class="p-card">
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="./images/projects-screenshots/taskly/login.png"
+                                    alt="Taskly task manager login page" loading="lazy">
+                            </div>
+                            <div class="project-card__body">
+                                <h3>Taskly</h3>
+                                <p>A full-stack task manager built to organize tasks and practise complete MERN-stack
+                                    development.</p>
+                                <ul class="project-card__tags" aria-label="Technologies used">
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                                <a class="project-card__link" href="https://taskly-ejn7.onrender.com/" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Open the live Taskly project in a new tab">
+                                    Live project <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
 
-                        </div>
-                        
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="./images/projects-screenshots/movie-app/movie-app.png"
+                                    alt="React Movie App landing page with featured movie posters" loading="lazy">
+                            </div>
+                            <div class="project-card__body">
+                                <h3>React Movie App</h3>
+                                <p>A responsive movie interface created to practise React components, data handling,
+                                    and application structure.</p>
+                                <ul class="project-card__tags" aria-label="Technologies used">
+                                    <li>React</li>
+                                    <li>JavaScript</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <a class="project-card__link" href="https://asmaa-aljazzar.github.io/movie_app/"
+                                    target="_blank" rel="noopener noreferrer"
+                                    aria-label="Open the live React Movie App in a new tab">
+                                    Live project <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="./images/projects-screenshots/template3/template3.png"
+                                    alt="HTML and CSS Template Three landing page" loading="lazy">
+                            </div>
+                            <div class="project-card__body">
+                                <h3>HTML/CSS Template Three</h3>
+                                <p>A multi-section responsive website focused on reusable components, Grid, Flexbox,
+                                    and modern CSS effects.</p>
+                                <ul class="project-card__tags" aria-label="Technologies used">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Responsive Design</li>
+                                </ul>
+                                <a class="project-card__link"
+                                    href="https://asmaa-aljazzar.github.io/HTML-CSS-Template-3/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Open HTML and CSS Template Three in a new tab">
+                                    Live project <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="./images/projects-screenshots/template2/template2.png"
+                                    alt="Kasper HTML and CSS template landing page" loading="lazy">
+                            </div>
+                            <div class="project-card__body">
+                                <h3>HTML/CSS Template Two</h3>
+                                <p>A responsive front-end template created to strengthen layout, typography, and CSS
+                                    organization skills.</p>
+                                <ul class="project-card__tags" aria-label="Technologies used">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Flexbox</li>
+                                </ul>
+                                <a class="project-card__link"
+                                    href="https://asmaa-aljazzar.github.io/HTML_And_CSS_Templete_Two/" target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Open HTML and CSS Template Two in a new tab">
+                                    Live project <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
                     </div>
-                    <button>More projects on GitHub</button>
+
+                    <a class="button button--primary projects-button" href="https://github.com/asmaa-aljazzar"
+                        target="_blank" rel="noopener noreferrer">
+                        More projects on GitHub
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- End My Projects -->
 
-
         <!-- Start Contact Form -->
-        <section id="contact">
+        <section id="contact" aria-labelledby="contact-title">
+            <div class="main-container">
+                <div class="contact-intro">
+                    <h2 id="contact-title" class="section-title">Let's Work Together</h2>
+                    <p>
+                        I am open to junior web development and software-development opportunities. Send me a message
+                        if you would like to discuss a project or role.
+                    </p>
+                    <a class="contact-email" href="mailto:aljazzarasmaa3@gmail.com">
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                        aljazzarasmaa3@gmail.com
+                    </a>
+                </div>
+
+                <form class="contact-form" action="mailto:aljazzarasmaa3@gmail.com" method="post"
+                    enctype="text/plain" aria-describedby="form-note">
+                    <p id="form-note" class="form-note">All fields are required. Submitting opens your email app.</p>
+
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required aria-required="true"
+                            minlength="2" maxlength="80">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required
+                            aria-required="true" maxlength="120">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required aria-required="true" minlength="10"
+                            maxlength="1000"></textarea>
+                    </div>
+
+                    <button class="button button--primary" type="submit">Send message</button>
+                </form>
+            </div>
         </section>
         <!-- End Contact Form -->
-
     </main>
 
     <!-- Start Footer -->
     <footer>
         <div class="container-fluid p-4 d-flex flex-column justify-content-center align-items-center">
             <p>Asmaa Aljazzar</p>
-            <div class="socials text-decoration-none">
-                <div> <a href="https://github.com/asmaa-aljazzar"><i class="bi bi-github"></i></a></div>
-                <div> <a href="https://www.linkedin.com/in/asmaaljazzar/"> <i class="bi bi-linkedin"></i></a></div>
-                <div> <a href="mailto:aljazzarasmaa3@gmail.com"><i class="bi bi-envelope"></i></a></div>
+            <div class="socials text-decoration-none" aria-label="Social media links">
+                <div>
+                    <a href="https://github.com/asmaa-aljazzar" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit my GitHub profile">
+                        <i class="bi bi-github" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/asmaaljazzar/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit my LinkedIn profile">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:aljazzarasmaa3@gmail.com" aria-label="Email me">
+                        <i class="bi bi-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-            <p class="mt-2">&copy;© 2020–2026 Asmaa. All rights reserved.</p>
+            <p class="mt-2">&copy; 2026 Asmaa Aljazzar. All rights reserved.</p>
         </div>
     </footer>
     <!-- End Footer -->
 
-
-    <!-- Bootstrap 5.3.8 JavaScript -->
+    <!-- Bootstrap JavaScript is used only for the responsive navbar. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

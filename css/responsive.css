@@ -1,0 +1,78 @@
+@media (max-width: 62rem) {
+    #home .main-container {
+        grid-template-columns: minmax(0, 1fr) minmax(16rem, 21rem);
+    }
+
+    #about .main-container,
+    #contact .main-container {
+        gap: 2.5rem;
+    }
+
+}
+
+@media (max-width: 48rem) {
+    :root {
+        --section-spacing: 3.75rem;
+    }
+
+    .main-container,
+    .footer-container {
+        width: min(90%, var(--container-width));
+    }
+
+    #home {
+        min-height: auto;
+    }
+
+    #home .main-container,
+    #about .main-container,
+    #contact .main-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #home .image {
+        width: min(100%, 25rem);
+        justify-self: center;
+    }
+
+    #about .section-title {
+        padding-top: 0;
+    }
+
+    .projects-cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .technology-list img {
+        width: 3rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .main-container,
+    .footer-container {
+        width: min(92%, var(--container-width));
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button,
+    .projects-button,
+    .contact-form .button {
+        width: 100%;
+    }
+
+    .socials {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.35rem;
+    }
+}
+
+@media (max-height: 31.25rem) and (orientation: landscape) {
+    #home {
+        min-height: auto;
+    }
+}

@@ -1,32 +1,64 @@
-@import url("./variables.css");
-
-#home .main-container .image {
-    padding: var(--container-padding);
-    box-shadow: var(--box-shadow);
-    border-radius: var(--image-radius);
+#home {
+    min-height: calc(100vh - 4.25rem);
+    display: flex;
+    align-items: center;
+    padding-block: var(--section-spacing);
 }
 
-#home .main-container img {
-    width: 100%;
-}
-
-#home h1:first-of-type {
-    margin-bottom: 25px;
-}
-#home h1 span {
-  font-size: 55px;
-  color: var(--primary-color);
-}
-
-#home h2 {
-    margin-bottom: 20px;
-    color: var(--ternary-color);
+#home .main-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 28rem);
+    align-items: center;
+    gap: clamp(2rem, 6vw, 5rem);
 }
 
 #home .intro {
-    padding: var(--container-padding);
+    max-width: 43rem;
 }
 
-#home p {
-    margin-right: 10px;
+#home .eyebrow {
+    margin-bottom: 0.25rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#home h1 {
+    margin-bottom: 1rem;
+}
+
+#home h1 span {
+    color: var(--primary-color);
+}
+
+#home h2 {
+    margin-bottom: 1.25rem;
+    color: var(--ternary-color);
+    font-size: clamp(1.45rem, 3vw, 2.25rem);
+}
+
+#home .intro > p:not(.eyebrow) {
+    max-width: 40rem;
+    font-size: 1.05rem;
+}
+
+#home .image {
+    padding: var(--container-padding);
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--image-radius);
+    background-color: rgba(35, 43, 61, 0.4);
+    box-shadow: var(--box-shadow);
+}
+
+#home .image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.75rem;
 }

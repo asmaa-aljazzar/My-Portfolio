@@ -1,6 +1,31 @@
-#about .describtion {
-    font-size: 20px;
-    text-align: justify;
+#about {
+    padding-bottom: var(--section-spacing);
+}
+
+#about .main-container {
+    display: grid;
+    grid-template-columns: minmax(12rem, 0.55fr) minmax(0, 1.45fr);
+    align-items: start;
+    gap: clamp(2rem, 6vw, 5rem);
+}
+
+#about .section-title {
+    padding-top: 1.5rem;
+}
+
+#about .description {
     padding: var(--container-padding);
-    background-color: rgba(196, 196, 196, 0.149);
+    border-left: 0.25rem solid var(--primary-color);
+    border-radius: var(--image-radius);
+    background-color: var(--surface-transparent);
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.18);
+}
+
+#about .description p {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+#about .description p + p {
+    margin-top: 1rem;
 }
