@@ -1,0 +1,41 @@
+nav {
+    box-shadow: 0 1px 20px #c4b4ff;
+}
+
+nav .container {
+    height: 100%;
+}
+
+nav .container>a:first-child {
+    color: #c4b4ff !important;
+}
+
+nav a {
+    color: #47c0d3 !important;
+    height: 100%;
+}
+
+
+nav a:hover {
+    color: #ffffff !important;
+}
+
+nav a.active {
+    color: #c4b4ff !important;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+/* 
+* Targeted Navigation Links and then give them a special style while activ
+ */
+body:has(#home:target) .nav-link[href="#home"],
+body:has(#technologies:target) .nav-link[href="#technologies"],
+body:has(#about:target) .nav-link[href="#about"],
+body:has(#projects:target) .nav-link[href="#projects"],
+body:has(#contact:target) .nav-link[href="#contact"] {
+    color: #c4b4ff !important;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+
+

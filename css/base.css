@@ -1,0 +1,51 @@
+/* 
+* Apply the base styles to the project here. This file is imported into the main CSS file and can be used throughout the project.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+video {
+    position: fixed;
+    inset: 0; /* shortcut for top: 0; left: 0; bottom: 0; right: 0; */
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* The mouse will not interact with the video */
+    filter: blur(7px) brightness(0.5);
+    transform: scale(1.02);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    isolation: isolate; /*Create a save are for layers [no negative value will be behind it]*/
+    background-color: #1a202e;
+    font-family: Kufam, serif;
+}
+
+/* Dark layer over video */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: #1a202e8c;
+    z-index: -2;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+

@@ -1,0 +1,13 @@
+/*
+* Store the variables used in the project here. This file is imported into the main CSS file and can be used throughout the project.
+*/
+
+:root {
+    --box-shadow: 0 1px 20px #c4b4ff;
+    --image-radius: 10px;
+    --section-margin: 50px;
+    --container-padding: 20px;
+     --primary-color: #c4b4ff;
+    --secondary-color: #47c0d3;
+    --white-color: #ffffff;
+}

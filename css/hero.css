@@ -1,0 +1,39 @@
+@import url("./variables.css");
+
+#home .container {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    margin-top: var(--section-margin);
+}
+
+#home .container .image {
+    padding: var(--container-padding);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--image-radius);
+}
+
+#home .container img {
+    width: 100%;
+}
+
+#home h1:first-of-type {
+    margin-bottom: 25px;
+}
+#home h1 span {
+  font-size: 55px;
+  color: var(--primary-color);
+}
+
+#home h2 {
+    margin-bottom: 20px;
+}
+#home .intro {
+    padding: var(--container-padding);
+}
+
+#home p {
+    margin-right: 10px;
+}
