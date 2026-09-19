@@ -5,19 +5,23 @@
 :root {
     --background-color: #1a202e;
     --surface-color: #232b3d;
-    --surface-transparent: rgba(35, 43, 61, 0.88);
+    --surface-transparent: rgba(35, 43, 61, 0.324);
+
     --primary-color: #c4b4ff;
     --secondary-color: #47c0d3;
     --ternary-color: #a2f4fd;
+
     --text-color: #f7f8fc;
     --muted-text-color: #d4d9e5;
     --dark-text-color: #252536;
-    --border-color: rgba(196, 180, 255, 0.42);
 
-    --box-shadow: 0 0.25rem 1.25rem rgba(196, 180, 255, 0.35);
+    --border-color: rgba(196, 180, 255, 0.42);
+    --box-shadow: 0 0.25rem 2rem rgba(196, 180, 255, 0.35);
     --image-radius: 0.75rem;
-    --section-spacing: 5rem;
+
+    --section-spacing: 10rem;
     --container-padding: 1.5rem;
     --container-width: 73.75rem;
-    --transition-speed: 0.25s;
+    
+    --transition-speed: 0.3s;
 }

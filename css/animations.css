@@ -1,5 +1,13 @@
-/*
- * The entrance animation is intentionally simple and short.
+/* 
+*  Entrance Animations
+*/
+
+/**
+ * Home content animations run when the page loads.
+ *
+ * `both` means:
+ * - before the animation starts, keep the styles from `from`
+ * - after the animation finishes, keep the styles from `to`
  */
 
 #home .intro {
@@ -7,27 +15,39 @@
 }
 
 #home .image {
-    animation: fade-in 0.8s 0.15s ease-out both;
+    animation: fade-up 0.8s 0.15s ease-out both;
 }
+
+
+/**
+ * Scroll-based animations.
+ *
+ * These animations depend on the element's position
+ * inside the viewport instead of animation duration.
+ *
+ * `both` means:
+ * - before the animation range → use `from`
+ * - after the animation range → keep `to`
+ *
+ * entry 0%: when we reach the element we cover 30% of the animation
+ */
+
+#technologies li,
+.project-card {
+    animation: fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
 
 @keyframes fade-up {
     from {
         opacity: 0;
-        transform: translateY(1rem);
+        transform: translateY(2rem);
     }
 
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
     }
 }

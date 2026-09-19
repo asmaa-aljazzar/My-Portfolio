@@ -4,7 +4,6 @@ nav {
 
 nav .nav-container {
     height: 100%;
-    margin: var(--section-margin);
 }
 
 nav a:first-of-type {

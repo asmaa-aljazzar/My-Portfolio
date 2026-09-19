@@ -25,11 +25,10 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Decorative background video: it has no speech or information. -->
     <video class="background-video" src="./videos/Space.mp4" muted autoplay loop playsinline preload="metadata"
         aria-hidden="true" tabindex="-1"></video>
 
-    <header>
+    <header class="sticky-top">
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a202e;"
             aria-label="Main navigation">
@@ -147,6 +146,7 @@
                                     <li>Node.js</li>
                                     <li>MongoDB</li>
                                 </ul>
+                                <!-- noopener: the new page will not control my page, noreferrer: the new page will not know whre i came from -->
                                 <a class="project-card__link" href="https://taskly-ejn7.onrender.com/" target="_blank"
                                     rel="noopener noreferrer" aria-label="Open the live Taskly project in a new tab">
                                     Live project <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>

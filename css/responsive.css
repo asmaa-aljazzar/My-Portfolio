@@ -1,3 +1,4 @@
+/* max 992px large tablet / small laptop */
 @media (max-width: 62rem) {
     #home .main-container {
         grid-template-columns: minmax(0, 1fr) minmax(16rem, 21rem);
@@ -10,18 +11,15 @@
 
 }
 
+/* 768px tablet / phone */
 @media (max-width: 48rem) {
     :root {
-        --section-spacing: 3.75rem;
+        --section-spacing: 2.75rem;
     }
 
     .main-container,
     .footer-container {
         width: min(90%, var(--container-width));
-    }
-
-    #home {
-        min-height: auto;
     }
 
     #home .main-container,
@@ -65,12 +63,12 @@
     }
 
     .socials {
-        flex-direction: column;
         align-items: center;
         gap: 0.35rem;
     }
 }
 
+/* 500px */
 @media (max-height: 31.25rem) and (orientation: landscape) {
     #home {
         min-height: auto;

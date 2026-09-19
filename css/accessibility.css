@@ -1,3 +1,5 @@
+/* Do not go to nav bar tabs each time you want to navigate 
+   using tab key just go to main content */
 .skip-link {
     position: fixed;
     z-index: 2000;
@@ -17,17 +19,18 @@
 
 :focus-visible {
     outline: 0.2rem solid var(--ternary-color);
-    outline-offset: 0.2rem;
+    outline-offset: 0.3rem;
 }
 
+/* Help screen reader to catch icons content likel search*/
 .visually-hidden {
     position: absolute !important;
-    width: 0.0625rem !important;
+    width: 0.0625rem !important; /* 1px */
     height: 0.0625rem !important;
     padding: 0 !important;
-    margin: -0.0625rem !important;
+    margin: -0.0625rem !important; /* 1px will be out */
     overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
+    clip: rect(0, 0, 0, 0) !important; /* Hide it completely by cut the element into 0 */
     white-space: nowrap !important;
     border: 0 !important;
 }
@@ -56,10 +59,12 @@
     .contact-form,
     .form-field input,
     .form-field textarea {
+        /* System chose the color of the border color */
         border: 0.125rem solid ButtonText;
     }
 
     .project-card__tags li {
+        /* Same with the text */
         border-color: CanvasText;
     }
 }
