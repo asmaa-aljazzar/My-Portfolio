@@ -10,37 +10,51 @@
     0% {
         opacity: 0;
         transform:
-            translateY(2rem)
-            translateZ(300px)
-            rotateY(10deg)
-            scale(0.8);
+            translateY(2rem) translateZ(300px) rotateY(10deg) scale(0.8);
     }
 
     60% {
         opacity: 1;
         transform:
-            translateY(0)
-            translateZ(-80px)
-            rotateY(-10deg)
-            scale(1);
+            translateY(0) translateZ(-80px) rotateY(-10deg) scale(1);
     }
 
     100% {
         opacity: 1;
         transform:
-            translateY(0)
-            translateZ(0)
-            rotateY(-8deg)
-            scale(1);
+            translateY(0) translateZ(0) rotateY(-8deg) scale(1);
     }
 }
 
+
+.technology-track {
+    animation: move-technologies 30s linear infinite;
+}
 
 @keyframes move-technologies {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-50%);
+    }
+}
+
+.fade-in-on-scroll {
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(4rem) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
